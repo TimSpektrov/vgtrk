@@ -1,39 +1,28 @@
-# credit-card
+[Посмотреть приложение](https://timSpektrov.github.io/vgtrk)
 
-This template should help get you started developing with Vue 3 in Vite.
+### Описание
+    
+Приложение написано на Vue3 с добавлением TypeScript, с целью демонстрации навыков.
 
-## Recommended IDE Setup
+При написании приложения использовались как нативные возможности Vue и JavaScript так и сторонние библиотеки
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+### Приложение состоит из 2х страниц
 
-## Type Support for `.vue` Imports in TS
+1. Валидация кредитной карты
+2. Галерея с попап
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+### Валидация 
 
-## Customize configuration
+Для валидации использовались библиотеки:
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- Vuetify
+- card-validator
+- Pinia
 
-## Project Setup
+### Валидация
 
-```sh
-npm install
-```
+Для галереи использовались библиотеки:
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+- Swiper
+- Axios
+- Pinia
