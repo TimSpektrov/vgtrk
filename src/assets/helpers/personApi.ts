@@ -1,0 +1,5 @@
+export const API_URL = 'https://cdnapi.smotrim.ru/api/v1/'
+export const ALL_PERSONS = 'boxes/vesti2'
+export const PERSON = 'persons/'
+export const PICTURE = 'pictures/'
+export const PICTURE2 = 'bq/redirect'
