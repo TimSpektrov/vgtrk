@@ -1,13 +1,13 @@
 <template>
-  <div
+  <div v-if="props.item"
     class="person-slide"
-    @click="store.fetchPerson(props.item?.id)"
+    @click="store.fetchPerson(props.item.id)"
   >
-    <img class="person-slide__avatar" :src="`${API_URL}${PICTURE}${props.item?.picId}/${PICTURE2}`" :alt="props.item?.title || ''">
+    <img class="person-slide__avatar" :src="`${API_URL}${PICTURE}${props.item.picId}/${PICTURE2}`" :alt="props.item.title">
     <p class="person-slide__name">
-      {{props.item?.name || ''}}
+      {{props.item.name}}
       <br>
-      {{props.item?.surname || ''}}
+      {{props.item.surname}}
     </p>
   </div>
 </template>
