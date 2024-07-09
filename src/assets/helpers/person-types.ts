@@ -16,3 +16,21 @@ export interface IItemDate {
   content?: IItemDate[];
   [key: string]: any;
 }
+
+interface ICurrentPersonPicture {
+  sizes: {
+    height: number;
+    preset: string;
+    url: string;
+    width: number;
+  }[]
+}
+
+export interface ICurrentPerson {
+  pictures: ICurrentPersonPicture[];
+  name: string;
+  surname: string;
+  anons: string;
+  body: string
+}
+

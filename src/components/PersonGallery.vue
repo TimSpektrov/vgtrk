@@ -20,13 +20,13 @@
 
 <script setup lang="ts">
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import type {IPerson} from "@/assets/helpers/types";
+import type {IPerson} from "@/assets/helpers/person-types";
 import PersonSlide from "@/components/PersonSlide.vue";
 import { Navigation } from 'swiper/modules';
 
 const props = defineProps({
   persons: {
-    type: Array<IPerson[]>,
+    type: Array<IPerson>,
   }
 })
 

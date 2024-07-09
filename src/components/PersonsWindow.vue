@@ -4,14 +4,14 @@
       <button class="persons-popup__close" @click="() => store.currentPerson = null" ></button>
       <div class="persons-popup__content-container">
         <div class="persons-popup__header">
-          <img class="persons-popup__img" :src="store.currentPerson?.pictures[0].sizes[0].url" :alt="store.currentPerson.anons">
+          <img class="persons-popup__img" :src="store.currentPerson?.pictures[0].sizes[0].url" :alt="store.currentPerson?.anons">
           <h3 class="persons-popup__heading">
-            {{ store.currentPerson?.name || '' }}
+            {{ store.currentPerson?.name}}
             <br>
-            {{ store.currentPerson?.surname || ''}}
+            {{ store.currentPerson?.surname}}
           </h3>
         </div>
-        <div class="persons-popup__content" v-html="store.currentPerson?.body || ''">
+        <div class="persons-popup__content" v-html="store.currentPerson?.body">
         </div>
       </div>
     </div>

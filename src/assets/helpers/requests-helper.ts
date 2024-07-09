@@ -1,4 +1,4 @@
-import type {IItemDate, IPerson} from "@/assets/helpers/types";
+import type {IItemDate, IPerson} from "@/assets/helpers/person-types";
 
 // Перебор массива с ответом в глубину для получения всех персон
 export const getPerson = (arr: IItemDate[]) => {

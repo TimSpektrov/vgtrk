@@ -31,17 +31,7 @@ import {computed, onBeforeUnmount, onMounted, ref} from "vue";
 import {cardholderName, expirationDate, number, cvv} from 'card-validator'
 import { useFocusedStore } from '@/stores/focuses'
 import {editCardNumber, editCvv, editName, formatExpiry} from "@/assets/helpers/card-helper";
-
-interface IFormInput {
-  label: string,
-  formId: string,
-  placeholder: string,
-  value: string,
-  errors: string[] | string | null,
-}
-interface IProps {
-  [key: string]: string
-}
+import type {IFormInput, IProps} from "@/assets/helpers/card-types";
 
 const errors = ref<IProps>({})
 
