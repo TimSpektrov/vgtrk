@@ -1,13 +1,13 @@
 <template>
-  <div v-if="props.item"
+  <div v-if="item"
     class="person-slide"
-    @click="store.fetchPerson(props.item.id)"
+    @click="store.fetchPerson(item.id)"
   >
-    <img class="person-slide__avatar" :src="`${API_URL}${PICTURE}${props.item.picId}/${PICTURE2}`" :alt="props.item.title">
+    <img class="person-slide__avatar" :src="`${API_URL}${PICTURE}${item.picId}/${PICTURE2}`" :alt="item.title">
     <p class="person-slide__name">
-      {{props.item.name}}
+      {{item.name}}
       <br>
-      {{props.item.surname}}
+      {{item.surname}}
     </p>
   </div>
 </template>
@@ -16,7 +16,7 @@
 import {API_URL, PICTURE, PICTURE2} from "@/assets/helpers/personApi";
 import {usePersonsStore} from "@/stores/persons";
 
-const props = defineProps({
+defineProps({
     item: {
       type: Object
     }

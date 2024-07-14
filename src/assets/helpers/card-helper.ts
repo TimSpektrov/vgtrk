@@ -1,10 +1,14 @@
 import {number} from "card-validator";
 
 export const formatCardNumber = (str: string, pattern: number[] | undefined) => {
+  const numbers = str.match(/\d/g)?.join('')
+  if (!numbers || numbers.length < 2 ) {
+    return numbers
+  }
   if (!pattern || pattern.length < 1) {
     return str.trim()
   }
-  const arrayFromString = str.split('');
+  const arrayFromString = numbers.split('');
   pattern.sort((a, b) => b - a).forEach(index => {
     if (index <= str.length) {
       arrayFromString.splice(index, 0, ' '); // Вставляем пробел перед элементом

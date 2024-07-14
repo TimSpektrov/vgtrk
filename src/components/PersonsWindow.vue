@@ -22,9 +22,6 @@
   import {usePersonsStore} from "@/stores/persons";
 
   const store = usePersonsStore()
-
-  console.log(store.currentPerson)
-
 </script>
 
 <style lang="scss">

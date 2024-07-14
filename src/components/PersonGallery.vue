@@ -9,7 +9,7 @@
     }"
       :modules="[Navigation]"
     >
-      <swiper-slide v-for="(slide) in props.persons" :key="slide.id">
+      <swiper-slide v-for="(slide) in persons" :key="slide.id">
         <person-slide :item="slide" />
       </swiper-slide>
       <div class="swiper-button-next" tabindex="0" role="button"></div>
@@ -24,12 +24,11 @@ import type {IPerson} from "@/assets/helpers/person-types";
 import PersonSlide from "@/components/PersonSlide.vue";
 import { Navigation } from 'swiper/modules';
 
-const props = defineProps({
+defineProps({
   persons: {
     type: Array<IPerson>,
   }
 })
-
 </script>
 
 <style lang="scss">
